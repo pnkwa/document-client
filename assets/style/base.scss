@@ -1,0 +1,67 @@
+@layer base {
+    :root {
+        --sidebar-background: 0 0% 98%;
+        --sidebar-foreground: 240 5.3% 26.1%;
+        --sidebar-primary: 240 5.9% 10%;
+        --sidebar-primary-foreground: 0 0% 98%;
+        --sidebar-accent: 240 4.8% 95.9%;
+        --sidebar-accent-foreground: 240 5.9% 10%;
+        --sidebar-border: 220 13% 91%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+    }
+
+    .dark {
+        --sidebar-background: 240 5.9% 10%;
+        --sidebar-foreground: 240 4.8% 95.9%;
+        --sidebar-primary: 224.3 76.3% 48%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 240 3.7% 15.9%;
+        --sidebar-accent-foreground: 240 4.8% 95.9%;
+        --sidebar-border: 240 3.7% 15.9%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+    }
+}
+
+@layer components {
+    .doc-content {
+        figure {
+            @apply my-6;
+
+            > * {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        iframe,
+        embed,
+        video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            border: 1px solid var(--color-navy-20);
+            background-color: var(--color-background-tertiary);
+            box-shadow: 0 8px 16px rgba(15, 23, 42, 0.08);
+        }
+
+        video {
+            border-radius: 0.85rem;
+        }
+
+        iframe:not([height]),
+        embed:not([height]),
+        video:not([height]) {
+            aspect-ratio: 16 / 9;
+            min-height: 220px;
+        }
+
+        @media (min-width: 640px) {
+            iframe:not([height]),
+            embed:not([height]),
+            video:not([height]) {
+                min-height: 320px;
+            }
+        }
+    }
+}
