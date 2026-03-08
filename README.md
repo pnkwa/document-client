@@ -14,6 +14,9 @@ The project focuses on providing a clean documentation-style interface inspired 
 
 This repository contains the **client-side application** responsible for rendering document content and managing the user interface.
 
+<img width="1666" height="1051" alt="ภาพถ่ายหน้าจอ 2569-03-08 เวลา 23 37 41" src="https://github.com/user-attachments/assets/0bdfa761-40a3-48a3-ae38-2d48c58c7bcc" />
+<img width="1666" height="1051" alt="ภาพถ่ายหน้าจอ 2569-03-08 เวลา 23 56 56" src="https://github.com/user-attachments/assets/accfcc6c-ffb2-4736-90b7-58324d48903e" />
+
 ---
 
 ## Key Features
